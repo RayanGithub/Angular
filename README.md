@@ -1,0 +1,2 @@
+# Angular
+For angular projects
