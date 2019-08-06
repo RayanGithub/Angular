@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
     selector : 'app-client',
+    styleUrls : ['./client.component.css'],
     template : 
-    `<P>This is from Client Component</P>
+    `<h3>This is from Client Component</h3>
     <app-server></app-server>`
     //templateUrl : './client.component.html'
 })
