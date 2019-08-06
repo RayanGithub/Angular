@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector : 'app-landing',
+    selector : '[app-landing]', //making selector as an attribute
     templateUrl : './landing.component.html',
-    styleUrls : ['./landing.component.css']
+    styles : [`
+    h2 {
+        color : crimson
+    }
+    `],
+    //styleUrls : ['./landing.component.css']
 })
 export class LandingComponent{
 
