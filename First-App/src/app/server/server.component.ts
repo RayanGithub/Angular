@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
     templateUrl : './server.Component.html'
 })
 export class ServerComponent {
-    Age = 24
+    serverId: number = 10;
+    serverName: string = 'ServerA';
+    serverStatus: string = 'offline';
+
+    getServerStatus() {
+        return this.serverStatus;
+    }
 }
