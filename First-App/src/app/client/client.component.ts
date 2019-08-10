@@ -14,7 +14,8 @@ import { Component, OnInit } from '@angular/core';
 
 export class ClientComponent  implements OnInit{
     ClientData = 'data';
-    allowNewClient = false;
+    allowNewClient: boolean = false;
+    clientMessage: string;
 
     constructor() {
         setTimeout(() => {
@@ -22,6 +23,10 @@ export class ClientComponent  implements OnInit{
         },2000)
     }
     ngOnInit() {
+        this.clientMessage = 'No Client Added';
+    }
 
+    onClickAddClient(){
+        this.clientMessage = 'Client Successfully Added';
     }
 }

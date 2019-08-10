@@ -5,4 +5,7 @@ This is String Interpolation: <b>{{ allowNewClient }}</b>
 <br>
 This is Property Binding: <b [innerText]="allowNewClient"></b>
 </p>
+<button class="btn btn-primary" (click)="onClickAddClient()">Add Client</button>
+<br>
+<label>Message:</label><b> {{clientMessage}}</b>
 <app-server></app-server>
