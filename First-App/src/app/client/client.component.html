@@ -1,3 +1,8 @@
 <h3>This is from Client Component</h3>
 <button class="btn btn-primary" [disabled]="!allowNewClient">Add Client</button>
+<p>
+This is String Interpolation: <b>{{ allowNewClient }}</b>
+<br>
+This is Property Binding: <b [innerText]="allowNewClient"></b>
+</p>
 <app-server></app-server>
